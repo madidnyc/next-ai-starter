@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyleGuide>
+
+    <!-- ============================================= -->
+    <!-- 1. BRAND OVERVIEW                            -->
+    <!-- ============================================= -->
+    <BrandOverview>
+        <BrandName>Zaigo</BrandName>
+        <MissionStatement>Empowering AI labs with on-demand domain expertise.</MissionStatement>
+        <CoreValues>
+            <Value>Expertise</Value>
+            <Value>Efficiency</Value>
+            <Value>Quality</Value>
+        </CoreValues>
+        <BrandTone>
+            <Description>
+                Our voice is friendly yet professional—like a knowledgeable startup partner 
+                offering solutions and guidance to both AI labs and subject matter experts.
+            </Description>
+        </BrandTone>
+
+        <!-- 1.1 LOGO & BRAND ASSETS -->
+        <LogoAndBrandAssets>
+            <PlaceholderLogo>
+                <Description>
+                    Currently using a placeholder logo. A final logo will be ready in about a week.
+                    Use a simple text-based placeholder ("Zaigo") or generic icon for now.
+                </Description>
+            </PlaceholderLogo>
+            <FaviconAndAppIcons>
+                <Guidelines>
+                    <Guideline>
+                        Use a simplified version of the placeholder logo (or a single letter "Z") for browser tabs.
+                    </Guideline>
+                    <Guideline>
+                        For mobile or social previews, maintain brand colors and clear readability.
+                    </Guideline>
+                </Guidelines>
+            </FaviconAndAppIcons>
+        </LogoAndBrandAssets>
+    </BrandOverview>
+
+    <!-- ============================================= -->
+    <!-- 2. TYPOGRAPHY                                -->
+    <!-- ============================================= -->
+    <Typography>
+        <FontFamily>
+            <PrimaryTypeface>Open Sans, Arial, sans-serif</PrimaryTypeface>
+        </FontFamily>
+
+        <TypographyPrinciples>
+            <Principle>
+                <Title>Hierarchy</Title>
+                <Description>Use clear heading levels to guide the user’s focus.</Description>
+            </Principle>
+            <Principle>
+                <Title>Readability</Title>
+                <Description>Maintain comfortable line heights and adequate contrast.</Description>
+            </Principle>
+            <Principle>
+                <Title>Consistency</Title>
+                <Description>Keep type scales uniform across pages and devices.</Description>
+            </Principle>
+            <Principle>
+                <Title>Responsiveness</Title>
+                <Description>Ensure font sizes and spacing adapt to various screen sizes.</Description>
+            </Principle>
+        </TypographyPrinciples>
+
+        <TypeScaleAndUsage>
+            <Heading1>
+                <FontSize>36-48px</FontSize>
+                <FontWeight>Bold</FontWeight>
+                <LineHeight>1.2-1.3</LineHeight>
+                <Usage>Main page headings, hero sections</Usage>
+            </Heading1>
+            <Heading2>
+                <FontSize>28-32px</FontSize>
+                <FontWeight>Bold</FontWeight>
+                <LineHeight>1.2-1.3</LineHeight>
+                <Usage>Section headings</Usage>
+            </Heading2>
+            <Heading3>
+                <FontSize>22-24px</FontSize>
+                <FontWeight>Semi-bold</FontWeight>
+                <LineHeight>1.2-1.4</LineHeight>
+                <Usage>Subsection headings</Usage>
+            </Heading3>
+            <Heading4>
+                <FontSize>18-20px</FontSize>
+                <FontWeight>Semi-bold</FontWeight>
+                <LineHeight>1.2-1.4</LineHeight>
+                <Usage>Smaller headings or highlights</Usage>
+            </Heading4>
+            <BodyM>
+                <FontSize>16px</FontSize>
+                <FontWeight>Regular</FontWeight>
+                <LineHeight>1.5</LineHeight>
+                <Usage>Main body text</Usage>
+            </BodyM>
+            <BodyS>
+                <FontSize>14px</FontSize>
+                <FontWeight>Regular</FontWeight>
+                <LineHeight>1.4-1.5</LineHeight>
+                <Usage>Secondary text, captions</Usage>
+            </BodyS>
+            <Caption>
+                <FontSize>12px</FontSize>
+                <FontWeight>Regular</FontWeight>
+                <LineHeight>1.3-1.4</LineHeight>
+                <Usage>Small disclaimers, microcopy</Usage>
+            </Caption>
+        </TypeScaleAndUsage>
+    </Typography>
+
+    <!-- ============================================= -->
+    <!-- 3. COLOR PALETTE                             -->
+    <!-- ============================================= -->
+    <ColorPalette>
+        <ColorPrinciples>
+            <Principle>Consistency across web and print</Principle>
+            <Principle>Adherence to accessibility (WCAG) standards</Principle>
+            <Principle>Clear visual hierarchy using color contrast</Principle>
+            <Principle>Balance of brand identity and usability</Principle>
+        </ColorPrinciples>
+
+        <PrimaryBrandColor>
+            <Name>Brand Green</Name>
+            <Hex>#028C6A</Hex>
+            <RGB>2, 140, 106</RGB>
+            <Usage>Primary CTAs, main highlights, header backgrounds</Usage>
+        </PrimaryBrandColor>
+
+        <AccentColors>
+            <AccentColor>
+                <Name>Accent Teal</Name>
+                <Hex>#A3E4D7</Hex>
+                <Usage>Secondary buttons, badges, hover states</Usage>
+            </AccentColor>
+            <AccentColor>
+                <Name>Accent Blue</Name>
+                <Hex>#2E86C1</Hex>
+                <Usage>Secondary highlights, infographics</Usage>
+            </AccentColor>
+        </AccentColors>
+
+        <NeutralPalette>
+            <NeutralColor>
+                <Name>White</Name>
+                <Hex>#FFFFFF</Hex>
+                <Usage>Backgrounds, text on dark backgrounds</Usage>
+            </NeutralColor>
+            <NeutralColor>
+                <Name>Gray 100</Name>
+                <Hex>#F8F9FA</Hex>
+                <Usage>Very light backgrounds</Usage>
+            </NeutralColor>
+            <NeutralColor>
+                <Name>Gray 200</Name>
+                <Hex>#E9ECEF</Hex>
+                <Usage>UI elements, borders</Usage>
+            </NeutralColor>
+            <NeutralColor>
+                <Name>Gray 300</Name>
+                <Hex>#DEE2E6</Hex>
+                <Usage>Secondary backgrounds</Usage>
+            </NeutralColor>
+            <NeutralColor>
+                <Name>Gray 600</Name>
+                <Hex>#6C757D</Hex>
+                <Usage>Disabled text, subtle icons</Usage>
+            </NeutralColor>
+            <NeutralColor>
+                <Name>Gray 800</Name>
+                <Hex>#343A40</Hex>
+                <Usage>Headings on light backgrounds</Usage>
+            </NeutralColor>
+            <NeutralColor>
+                <Name>Black</Name>
+                <Hex>#000000</Hex>
+                <Usage>Primary text on light backgrounds</Usage>
+            </NeutralColor>
+        </NeutralPalette>
+
+        <SupportingColors>
+            <Color>
+                <Name>Red (Error)</Name>
+                <Hex>#E74C3C</Hex>
+                <Usage>Error messages, critical alerts</Usage>
+            </Color>
+            <Color>
+                <Name>Orange (Warning)</Name>
+                <Hex>#F39C12</Hex>
+                <Usage>Warning states, caution messages</Usage>
+            </Color>
+            <Color>
+                <Name>Blue (Info)</Name>
+                <Hex>#3498DB</Hex>
+                <Usage>Informational messages, tooltips</Usage>
+            </Color>
+            <Color>
+                <Name>Green (Success)</Name>
+                <Hex>#2ECC71</Hex>
+                <Usage>Success messages, confirmations</Usage>
+            </Color>
+        </SupportingColors>
+    </ColorPalette>
+
+    <!-- ============================================= -->
+    <!-- 4. GRID SYSTEM                               -->
+    <!-- ============================================= -->
+    <GridSystem>
+        <GridSystemPrinciples>
+            <Principle>Primary columns for content and layout</Principle>
+            <Principle>Secondary columns for spacing and sidebars</Principle>
+            <Principle>Responsiveness with fluid breakpoints</Principle>
+        </GridSystemPrinciples>
+
+        <DesktopCollapsedSidebar>
+            <Columns>12</Columns>
+            <SidebarWidth>80px</SidebarWidth>
+            <ContentAreaWidth>Remaining columns for main content</ContentAreaWidth>
+        </DesktopCollapsedSidebar>
+
+        <DesktopExpandedSidebar>
+            <Columns>12</Columns>
+            <SidebarWidth>240px</SidebarWidth>
+            <ContentAreaWidth>Remaining columns for main content</ContentAreaWidth>
+        </DesktopExpandedSidebar>
+    </GridSystem>
+
+    <!-- ============================================= -->
+    <!-- 5. SPACING SYSTEM                            -->
+    <!-- ============================================= -->
+    <SpacingSystem>
+        <Description>Use consistent spacing increments for margins, paddings, and element gaps.</Description>
+        <Scale>
+            <Value>4px</Value>
+            <Value>8px</Value>
+            <Value>16px</Value>
+            <Value>24px</Value>
+            <Value>32px</Value>
+            <Value>48px</Value>
+        </Scale>
+    </SpacingSystem>
+
+    <!-- ============================================= -->
+    <!-- 6. RESPONSIVE BREAKPOINTS                    -->
+    <!-- ============================================= -->
+    <ResponsiveBreakpoints>
+        <Description>
+            Define breakpoints to ensure layouts and typography adapt smoothly across devices.
+        </Description>
+        <Breakpoints>
+            <Breakpoint>
+                <Name>Mobile</Name>
+                <Width>320px - 767px</Width>
+                <Usage>Portrait smartphones, smaller screens</Usage>
+            </Breakpoint>
+            <Breakpoint>
+                <Name>Tablet</Name>
+                <Width>768px - 1023px</Width>
+                <Usage>Landscape tablets, small laptops</Usage>
+            </Breakpoint>
+            <Breakpoint>
+                <Name>Desktop</Name>
+                <Width>1024px - 1439px</Width>
+                <Usage>Standard desktops, large laptops</Usage>
+            </Breakpoint>
+            <Breakpoint>
+                <Name>Large Desktop</Name>
+                <Width>1440px and above</Width>
+                <Usage>Large monitors, widescreen displays</Usage>
+            </Breakpoint>
+        </Breakpoints>
+        <ScalingGuidelines>
+            <Guideline>Adjust font sizes (Heading1 ~ 36px on mobile, 48px on large desktop).</Guideline>
+            <Guideline>Grid columns can stack on mobile and expand on desktop.</Guideline>
+            <Guideline>Ensure images and cards remain visually balanced across breakpoints.</Guideline>
+        </ScalingGuidelines>
+    </ResponsiveBreakpoints>
+
+    <!-- ============================================= -->
+    <!-- 7. COMPONENTS                                -->
+    <!-- ============================================= -->
+    <Components>
+
+        <!-- 7.1 ICONOGRAPHY & ILLUSTRATIONS -->
+        <IconographyAndIllustrations>
+            <IconLibrary>
+                <Recommendation>Use Font Awesome for consistent coverage.</Recommendation>
+                <Sizing>16px for small icons, 24px default, 32px+ for prominent icons</Sizing>
+                <Style>Prefer outline icons for a modern, clean look; fill icons for emphasis.</Style>
+                <ColorUsage>
+                    <Guideline>Match icon color to text color in normal state.</Guideline>
+                    <Guideline>Use brand or accent colors to highlight interactive icons.</Guideline>
+                </ColorUsage>
+            </IconLibrary>
+            <IllustrationStyle>
+                <FluxHalfIllustration>
+                    <Description>
+                        Use the Flux Half Illustration model from Replicate for custom images 
+                        (hero banners, marketing sections). Example prompt: 
+                        "In the style of TOK, a photo editorial avant-garde dramatic action pose of a 
+                        person wearing 90s round wacky sunglasses pulling glasses down looking forward, 
+                        in OUTER SPACE with large marble structures and bonsai trees at sunset with a 
+                        vibrant illustrated jacket surrounded by illustrations of COMPUTERS, smoke, 
+                        flames, ice cream, sparkles, rock and roll"
+                    </Description>
+                    <Usage>
+                        <Guideline>Use these stylized images for landing pages, hero sections, or onboarding screens.</Guideline>
+                        <Guideline>Aim for consistency in color tones to align with brand palette.</Guideline>
+                    </Usage>
+                </FluxHalfIllustration>
+            </IllustrationStyle>
+        </IconographyAndIllustrations>
+
+        <!-- 7.2 BUTTONS -->
+        <Buttons>
+            <Description>Reusable clickable elements for actions like "Add," "Submit," or "Cancel."</Description>
+            <Sizes>
+                <Small>
+                    <Height>32px</Height>
+                    <FontSize>14px</FontSize>
+                    <Padding>0 12px</Padding>
+                </Small>
+                <Medium>
+                    <Height>40px</Height>
+                    <FontSize>16px</FontSize>
+                    <Padding>0 16px</Padding>
+                </Medium>
+                <Large>
+                    <Height>48px</Height>
+                    <FontSize>18px</FontSize>
+                    <Padding>0 20px</Padding>
+                </Large>
+            </Sizes>
+            <States>
+                <Normal>
+                    <BackgroundColor>#028C6A</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#028C6A</BorderColor>
+                </Normal>
+                <Hover>
+                    <BackgroundColor>#02A57E</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#02A57E</BorderColor>
+                </Hover>
+                <Pressed>
+                    <BackgroundColor>#02684F</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#02684F</BorderColor>
+                </Pressed>
+                <Disabled>
+                    <BackgroundColor>#6C757D</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#6C757D</BorderColor>
+                </Disabled>
+                <Loading>
+                    <Indicator>Spinner or progress icon</Indicator>
+                    <BackgroundColor>#028C6A</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                </Loading>
+                <Success>
+                    <BackgroundColor>#2ECC71</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#2ECC71</BorderColor>
+                </Success>
+            </States>
+            <Usage>
+                <Guideline>Primary buttons use Brand Green for important CTAs.</Guideline>
+                <Guideline>Secondary buttons can use Accent Teal or a neutral color scheme.</Guideline>
+                <Guideline>Keep label text concise, e.g., "Add," "Save," "Submit."</Guideline>
+            </Usage>
+        </Buttons>
+
+        <!-- 7.3 DROPDOWNS -->
+        <Dropdowns>
+            <Description>A menu component that expands to show a list of selectable options.</Description>
+            <Sizes>
+                <Small>
+                    <Height>32px</Height>
+                    <FontSize>14px</FontSize>
+                    <Padding>0 8px</Padding>
+                </Small>
+                <Medium>
+                    <Height>40px</Height>
+                    <FontSize>16px</FontSize>
+                    <Padding>0 12px</Padding>
+                </Medium>
+                <Large>
+                    <Height>48px</Height>
+                    <FontSize>18px</FontSize>
+                    <Padding>0 16px</Padding>
+                </Large>
+            </Sizes>
+            <States>
+                <Normal>
+                    <BackgroundColor>#FFFFFF</BackgroundColor>
+                    <TextColor>#343A40</TextColor>
+                    <BorderColor>#DEE2E6</BorderColor>
+                </Normal>
+                <Hover>
+                    <BackgroundColor>#F8F9FA</BackgroundColor>
+                    <TextColor>#343A40</TextColor>
+                    <BorderColor>#A3E4D7</BorderColor>
+                </Hover>
+                <Pressed>
+                    <BackgroundColor>#E9ECEF</BackgroundColor>
+                    <TextColor>#343A40</TextColor>
+                    <BorderColor>#028C6A</BorderColor>
+                </Pressed>
+                <Disabled>
+                    <BackgroundColor>#6C757D</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#6C757D</BorderColor>
+                </Disabled>
+            </States>
+            <Usage>
+                <Guideline>Use for selecting from multiple options, e.g., job categories, filters.</Guideline>
+                <Guideline>Label the dropdown clearly for accessibility.</Guideline>
+                <Guideline>Close the dropdown on outside click or selection to maintain focus.</Guideline>
+            </Usage>
+        </Dropdowns>
+
+        <!-- 7.4 SEARCH BOX -->
+        <SearchBox>
+            <Description>
+                A standard input field for querying the platform. Displays suggestions and filters as the user types.
+            </Description>
+            <Usage>
+                <Guideline>Place in the header or dedicated search areas.</Guideline>
+                <Guideline>Use placeholder text like "Search for experts, projects..."</Guideline>
+            </Usage>
+            <Styles>
+                <BackgroundColor>#FFFFFF</BackgroundColor>
+                <BorderColor>#DEE2E6</BorderColor>
+                <HoverFocusColor>#A3E4D7</HoverFocusColor>
+                <Icon>Magnifying Glass Icon (Font Awesome or Material Icons)</Icon>
+            </Styles>
+        </SearchBox>
+
+        <!-- 7.5 SCROLL BAR -->
+        <ScrollBar>
+            <Description>Custom scroll bar styling for modern browsers.</Description>
+            <Usage>
+                <Guideline>Enhance user experience by matching brand colors.</Guideline>
+                <Guideline>Keep it subtle for readability and minimal distraction.</Guideline>
+            </Usage>
+            <Styles>
+                <TrackColor>#F8F9FA</TrackColor>
+                <ThumbColor>#028C6A</ThumbColor>
+                <HoverColor>#02A57E</HoverColor>
+                <Width>8px</Width>
+                <Radius>4px</Radius>
+            </Styles>
+        </ScrollBar>
+
+        <!-- 7.6 AVATARS -->
+        <Avatars>
+            <Description>Circular or rounded profile images/icons representing users.</Description>
+            <Types>
+                <Image>
+                    <Description>Displays user’s photo or graphic avatar.</Description>
+                    <Usage>Standard for user profiles, teams.</Usage>
+                </Image>
+                <Initials>
+                    <Description>Two-letter initials if no image is provided.</Description>
+                    <Usage>Used when privacy or brand consistency is preferred.</Usage>
+                </Initials>
+                <Anonymous>
+                    <Description>A generic placeholder avatar (e.g., question mark icon).</Description>
+                    <Usage>Used for users who wish to remain anonymous.</Usage>
+                </Anonymous>
+            </Types>
+            <Styles>
+                <Size>40px standard, 24px small, 64px large</Size>
+                <Shape>Circular (50% border-radius)</Shape>
+                <BorderColor>#FFFFFF</BorderColor>
+                <BorderWidth>2px</BorderWidth>
+            </Styles>
+        </Avatars>
+
+        <!-- 7.7 INPUT FIELDS -->
+        <InputFields>
+            <Description>
+                Text fields for data entry (e.g., name, email), supporting various states like focus, error, and success.
+            </Description>
+            <Sizes>
+                <Small>
+                    <Height>32px</Height>
+                    <FontSize>14px</FontSize>
+                    <Padding>0 8px</Padding>
+                </Small>
+                <Medium>
+                    <Height>40px</Height>
+                    <FontSize>16px</FontSize>
+                    <Padding>0 12px</Padding>
+                </Medium>
+                <Large>
+                    <Height>48px</Height>
+                    <FontSize>18px</FontSize>
+                    <Padding>0 16px</Padding>
+                </Large>
+            </Sizes>
+            <States>
+                <Normal>
+                    <BackgroundColor>#FFFFFF</BackgroundColor>
+                    <BorderColor>#DEE2E6</BorderColor>
+                    <LabelColor>#343A40</LabelColor>
+                    <PlaceholderColor>#6C757D</PlaceholderColor>
+                </Normal>
+                <Hover>
+                    <BackgroundColor>#FFFFFF</BackgroundColor>
+                    <BorderColor>#A3E4D7</BorderColor>
+                    <LabelColor>#343A40</LabelColor>
+                </Hover>
+                <Focus>
+                    <BackgroundColor>#FFFFFF</BackgroundColor>
+                    <BorderColor>#028C6A</BorderColor>
+                    <LabelColor>#028C6A</LabelColor>
+                </Focus>
+                <Error>
+                    <BackgroundColor>#FFFFFF</BackgroundColor>
+                    <BorderColor>#E74C3C</BorderColor>
+                    <LabelColor>#E74C3C</LabelColor>
+                    <HelperTextColor>#E74C3C</HelperTextColor>
+                </Error>
+                <Success>
+                    <BackgroundColor>#FFFFFF</BackgroundColor>
+                    <BorderColor>#2ECC71</BorderColor>
+                    <LabelColor>#2ECC71</LabelColor>
+                </Success>
+                <Disabled>
+                    <BackgroundColor>#E9ECEF</BackgroundColor>
+                    <BorderColor>#DEE2E6</BorderColor>
+                    <LabelColor>#6C757D</LabelColor>
+                </Disabled>
+            </States>
+            <Usage>
+                <Guideline>Use clear labels and helper text to guide user input.</Guideline>
+                <Guideline>Provide error messages when validation fails.</Guideline>
+                <Guideline>Consider success state for validated fields in multi-step forms.</Guideline>
+            </Usage>
+        </InputFields>
+
+        <!-- 7.8 CHECKBOXES, RADIOS, TOGGLES -->
+        <CheckboxesRadiosToggles>
+            <Description>
+                Standard boolean input elements for user selections, each with various states (checked, unchecked, disabled, hover, focus).
+            </Description>
+            <Styles>
+                <Checkbox>
+                    <CheckedColor>#028C6A</CheckedColor>
+                    <UncheckedColor>#FFFFFF</UncheckedColor>
+                    <BorderColor>#DEE2E6</BorderColor>
+                </Checkbox>
+                <Radio>
+                    <SelectedColor>#028C6A</SelectedColor>
+                    <UnselectedColor>#FFFFFF</UnselectedColor>
+                    <BorderColor>#DEE2E6</BorderColor>
+                </Radio>
+                <Toggle>
+                    <OnColor>#028C6A</OnColor>
+                    <OffColor>#E9ECEF</OffColor>
+                    <KnobColor>#FFFFFF</KnobColor>
+                </Toggle>
+            </Styles>
+            <States>
+                <Normal>Element is ready for interaction.</Normal>
+                <Hover>Outline or highlight border slightly.</Hover>
+                <Focus>High-contrast border or outline to indicate keyboard focus.</Focus>
+                <Disabled>Dimmed colors, no hover or focus states.</Disabled>
+            </States>
+            <Usage>
+                <Guideline>Use checkboxes for multiple selections, radios for exclusive choices.</Guideline>
+                <Guideline>Toggles indicate immediate on/off states.</Guideline>
+            </Usage>
+        </CheckboxesRadiosToggles>
+
+        <!-- 7.9 ADVANCED FORM COMPONENTS -->
+        <AdvancedFormComponents>
+            <DatePickers>
+                <Description>Calendar pop-ups for date selection.</Description>
+                <Usage>
+                    <Guideline>Highlight current date and selected date with brand color (#028C6A).</Guideline>
+                    <Guideline>Disable past or future dates if needed for validation.</Guideline>
+                </Usage>
+            </DatePickers>
+            <Sliders>
+                <Description>Horizontal or vertical sliders for selecting numeric values.</Description>
+                <Usage>
+                    <Guideline>Show min/max labels and current value tooltip on hover.</Guideline>
+                </Usage>
+            </Sliders>
+            <MultiStepForms>
+                <Description>Forms broken into multiple steps or pages.</Description>
+                <Usage>
+                    <Guideline>Use progress indicators or step labels (e.g., Step 2 of 4).</Guideline>
+                    <Guideline>Validate each step before proceeding to the next.</Guideline>
+                </Usage>
+            </MultiStepForms>
+        </AdvancedFormComponents>
+
+        <!-- 7.10 TOAST NOTIFICATIONS -->
+        <ToastNotifications>
+            <Description>
+                Temporary, non-blocking notifications that appear to provide feedback or updates (e.g., success, error, info).
+            </Description>
+            <Types>
+                <Success>
+                    <Icon>Check Icon (Green)</Icon>
+                    <BackgroundColor>#343A40</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#2ECC71</BorderColor>
+                </Success>
+                <Error>
+                    <Icon>Exclamation or Error Icon (Red)</Icon>
+                    <BackgroundColor>#343A40</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#E74C3C</BorderColor>
+                </Error>
+                <Info>
+                    <Icon>Info Icon (Blue)</Icon>
+                    <BackgroundColor>#343A40</BackgroundColor>
+                    <TextColor>#FFFFFF</TextColor>
+                    <BorderColor>#3498DB</BorderColor>
+                </Info>
+            </Types>
+            <CommonElements>
+                <Message>
+                    <Description>Primary text or label describing the toast purpose.</Description>
+                </Message>
+                <Action>
+                    <Description>Optional button or link (e.g., "Undo", "Retry").</Description>
+                </Action>
+                <CloseButton>
+                    <Description>An 'X' icon to dismiss the toast.</Description>
+                </CloseButton>
+            </CommonElements>
+            <Usage>
+                <Guideline>Use short, concise text to keep toasts clear and unobtrusive.</Guideline>
+                <Guideline>Allow toasts to auto-dismiss after a set time (3–5 seconds).</Guideline>
+                <Guideline>Use distinct colors/icons for success, error, and info messages.</Guideline>
+            </Usage>
+        </ToastNotifications>
+
+        <!-- 7.11 CARDS -->
+        <Cards>
+            <Description>
+                Used to group related content (e.g., user profiles, project summaries). Often includes a header, body, and optional footer.
+            </Description>
+            <Style>
+                <BackgroundColor>#FFFFFF</BackgroundColor>
+                <CornerRadius>8px</CornerRadius>
+                <BoxShadow>0 2px 8px rgba(0, 0, 0, 0.1)</BoxShadow>
+                <HeaderFooterColor>#F8F9FA</HeaderFooterColor>
+                <Padding>16px</Padding>
+            </Style>
+            <Usage>
+                <Guideline>Use headers for titles or summary info; footers for actions (buttons, links).</Guideline>
+                <Guideline>Keep consistent spacing inside cards for a clean layout.</Guideline>
+            </Usage>
+        </Cards>
+
+        <!-- 7.12 MODALS -->
+        <Modals>
+            <Description>
+                Overlays for critical actions or detailed content. Usually includes a backdrop, close button, and dynamic content area.
+            </Description>
+            <Style>
+                <OverlayColor>rgba(0, 0, 0, 0.5)</OverlayColor>
+                <ContainerBackground>#FFFFFF</ContainerBackground>
+                <CornerRadius>8px</CornerRadius>
+                <BoxShadow>0 4px 16px rgba(0, 0, 0, 0.2)</BoxShadow>
+                <MaxWidth>600px</MaxWidth>
+                <Padding>24px</Padding>
+                <CloseButton>Top-right corner 'X' or icon</CloseButton>
+                <Animation>Fade in/out over 200ms</Animation>
+            </Style>
+            <Usage>
+                <Guideline>Focus should move to the modal when opened; return to trigger element when closed.</Guideline>
+                <Guideline>Use for short forms, confirmations, or quick info. For lengthy content, consider a dedicated page.</Guideline>
+            </Usage>
+        </Modals>
+
+        <!-- 7.13 NAVIGATION -->
+        <Navigation>
+            <Description>
+                In-app navigation elements, including top navigation bar, user profile menu, and sidebars.
+            </Description>
+            <TopNav>
+                <BackgroundColor>#FFFFFF</BackgroundColor>
+                <TextColor>#343A40</TextColor>
+                <BorderColor>#DEE2E6</BorderColor>
+                <LogoArea>
+                    <Description>Left-aligned placeholder or brand name "Zaigo" for now.</Description>
+                </LogoArea>
+                <MenuItems>
+                    <Description>Center or right-aligned menu items for main sections.</Description>
+                </MenuItems>
+                <UserProfile>
+                    <Description>Dropdown menu on the right side with profile info, settings, and logout.</Description>
+                </UserProfile>
+            </TopNav>
+            <SideNav>
+                <CollapsedWidth>80px</CollapsedWidth>
+                <ExpandedWidth>240px</ExpandedWidth>
+                <BackgroundColor>#F8F9FA</BackgroundColor>
+                <TextColor>#343A40</TextColor>
+                <ActiveItemColor>#028C6A</ActiveItemColor>
+                <HoverColor>#E9ECEF</HoverColor>
+            </SideNav>
+            <Usage>
+                <Guideline>Keep top-level navigation consistent across all pages.</Guideline>
+                <Guideline>Highlight the active page or section for clarity.</Guideline>
+                <Guideline>Use dropdown menus for secondary or tertiary items.</Guideline>
+            </Usage>
+        </Navigation>
+    </Components>
+
+    <!-- ============================================= -->
+    <!-- 8. GLOBAL UI CONVENTIONS                     -->
+    <!-- ============================================= -->
+    <GlobalUIConventions>
+        <CornerRadius>
+            <Default>8px</Default>
+            <Description>Applies to buttons, input fields, cards, and modals for a consistent, modern look.</Description>
+        </CornerRadius>
+        <ElevationAndShadows>
+            <LightShadow>0 2px 8px rgba(0, 0, 0, 0.1)</LightShadow>
+            <MediumShadow>0 4px 16px rgba(0, 0, 0, 0.2)</MediumShadow>
+            <HeavyShadow>0 8px 24px rgba(0, 0, 0, 0.3)</HeavyShadow>
+            <Usage>
+                <Guideline>Use LightShadow for small elements like cards or dropdowns.</Guideline>
+                <Guideline>Use MediumShadow for modals or popovers.</Guideline>
+                <Guideline>Reserve HeavyShadow for very prominent overlays or key calls-to-action.</Guideline>
+            </Usage>
+        </ElevationAndShadows>
+    </GlobalUIConventions>
+
+    <!-- ============================================= -->
+    <!-- 9. VOICE & TONE                              -->
+    <!-- ============================================= -->
+    <VoiceAndTone>
+        <Description>
+            Maintain a friendly yet professional style—like a knowledgeable startup partner offering solutions.
+        </Description>
+        <Guidelines>
+            <Guideline>Use clear, concise language, avoiding excessive jargon.</Guideline>
+            <Guideline>Emphasize benefits and solutions for AI labs and experts.</Guideline>
+            <Guideline>Stay consistent across marketing, UI text, and support pages.</Guideline>
+        </Guidelines>
+        <SamplePhrases>
+            <ErrorMessage>"Oops, something went wrong. Please try again."</ErrorMessage>
+            <SuccessMessage>"Great! Your changes have been saved."</SuccessMessage>
+            <MarketingCopy>"Join Zaigo today and connect with top AI labs seeking your expertise."</MarketingCopy>
+        </SamplePhrases>
+    </VoiceAndTone>
+
+    <!-- ============================================= -->
+    <!-- 10. MOTION & INTERACTION                     -->
+    <!-- ============================================= -->
+    <MotionAndInteraction>
+        <Transitions>
+            <DefaultTransition>200ms</DefaultTransition>
+            <Description>Use for hover effects, dropdown expansions, and toast entrances.</Description>
+        </Transitions>
+        <Microinteractions>
+            <HoverEffects>
+                <Description>Subtle color or shadow changes to indicate interactivity.</Description>
+            </HoverEffects>
+            <LoaderAnimations>
+                <Description>Spinner or pulsing icons to show background tasks.</Description>
+            </LoaderAnimations>
+        </Microinteractions>
+        <Usage>
+            <Guideline>Keep animations under 300ms for a snappy, modern feel.</Guideline>
+            <Guideline>Ensure no essential info is hidden by transitions.</Guideline>
+        </Usage>
+    </MotionAndInteraction>
+
+    <!-- ============================================= -->
+    <!-- 11. USAGE GUIDELINES                          -->
+    <!-- ============================================= -->
+    <UsageGuidelines>
+        <Guideline>Maintain color contrast ratios that meet at least WCAG AA standards (4.5:1 for body text).</Guideline>
+        <Guideline>Use heading levels (H1–H4) consistently for hierarchy and readability.</Guideline>
+        <Guideline>Reserve the primary brand color (#028C6A) for main CTAs and interactive elements.</Guideline>
+        <Guideline>Test layouts and components on multiple screen sizes for responsiveness.</Guideline>
+        <Guideline>Apply consistent corner radius (8px) and shadow settings for a unified look.</Guideline>
+    </UsageGuidelines>
+
+    <!-- ============================================= -->
+    <!-- 12. FUTURE CONSIDERATIONS                    -->
+    <!-- ============================================= -->
+    <FutureConsiderations>
+        <LogoUsage>
+            <Description>
+                Once the final Zaigo logo is ready, define guidelines for minimum size, clear space, 
+                and usage on different backgrounds. Update any placeholder references.
+            </Description>
+        </LogoUsage>
+        <ExtendedComponents>
+            <Description>
+                As new UI components (e.g., tooltips, advanced wizards) are developed, document them here.
+            </Description>
+        </ExtendedComponents>
+        <VersionControl>
+            <Description>
+                All updates will be tracked and approved by your AI agent. Keep a revision history 
+                or changelog for major changes to maintain alignment across the team.
+            </Description>
+        </VersionControl>
+    </FutureConsiderations>
+</StyleGuide>
