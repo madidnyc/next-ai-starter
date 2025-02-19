@@ -1,107 +1,72 @@
 # Functional Specifications
 
-## 1. Overview and Objectives
+## 1. Initial Project Planning and Structure
 
-### Project Purpose
-- High-level description of the project, its goals, and problems it aims to solve
+### Marketing Site Phase Approach
+- Build a single Next.js application that serves both the marketing site and the eventual full app.
+- Implement marketing pages as top-level routes (e.g., "/", "/about", "/signup", "/book-a-demo", "/ai-practice-interview", "/search-talent", "/search-open-jobs") for clean and intuitive URLs.
+- Organize marketing-specific pages within a dedicated folder (e.g., "src/app/marketing/") to maintain internal separation from future app logic.
 
-### Target Audience & Stakeholders 
-- Who will use the system
-- Who is involved in development
+### Project Directory Structure
+```
+project-root/
+├── src/
+│   ├── app/
+│   │   ├── marketing/     # Marketing-specific pages
+│   │   ├── dashboard/     # Reserved for future app pages
+│   │   └── api/          # API routes for simulated backend
+│   ├── components/       # Shared UI components
+│   ├── lib/             # Utilities and shared types
+│   └── styles/          # Additional styling
+├── data/
+│   └── mock/           # Dummy data JSON files
+├── public/
+│   ├── assets/         # General assets
+│   └── images/         # Image files
+├── tests/
+│   ├── unit/          # Jest unit tests
+│   ├── integration/   # Jest integration tests
+│   └── e2e/           # Playwright end-to-end tests
+└── docs/              # Project documentation
+```
 
-## 2. Feature Descriptions
+### Dummy Data and API Simulation
+- Use Next.js API routes (under `src/app/api/`) to simulate backend interactions for "Search Talent" and "Search Open Jobs."
+- Maintain dummy data in static JSON files (e.g., in a "data/mock/" directory) to easily transition to real backend data sources later.
 
-### List of Features
-- Detailed description of each feature/module
+### Waitlist Signup Implementation
+- Implement a waitlist signup page that posts data to a Next.js API route, initially returning a simulated success message.
+- This design provides a clear pathway for integrating with external email collection services in the future.
 
-### User Stories/Use Cases
-- Specific scenarios outlining user interactions with system
+### Global Design and Consistency
+- Marketing pages should share the same global layout and design components as the future app.
+- Follow established design guidelines in the style guide (`/docs/style-guide.xml`), utilizing component libraries like Tailwind CSS and ShadCN as applicable.
 
-### Acceptance Criteria
-- Conditions that must be met for feature completion
+### Testing and TDD Guidelines
+- Adopt a test-driven development approach even in the marketing phase to maintain high quality and ease future enhancements.
+- **Testing Structure:**
+  - **Unit and Integration Tests:** Use Jest. Organize tests in a `tests/` directory with sub-folders (`tests/unit/` and `tests/integration/`).
+  - **End-to-End Tests:** Use Playwright. Place these tests in `tests/e2e/`.
 
-## 3. Functional Requirements
+## 11. Architectural Considerations and Future Expansion
 
-### Core Functionalities
-- System requirements including:
-  - Input requirements
-  - Processing requirements 
-  - Output requirements
+### Architectural Decisions
+- **Unified Application:** Using a single Next.js application simplifies development, deployment, and eventual integration of full app features.
+- **Routing Strategy:** Beginning with top-level routes offers simplicity. In future phases, consider nesting app-specific routes under a dedicated folder (e.g., "/app") to clearly separate marketing and application functionalities.
+- **Separation of Concerns:** Internally segment the project for marketing and app features to promote maintainability and scalability.
+- **Data Simulation:** Using API routes with static JSON files for dummy data provides a realistic development experience and simplifies migration to dynamic data sources.
 
-### User Interactions
-- UI workflows
-- API interactions
-- Other system interaction patterns
+### Future Expansion
+- **Modular Development:** As the project transitions to a full application, progressively refactor components, API logic, and pages for enhanced modularity.
+- **Enhanced Testing Coverage:** Expand your testing suite as more interactive and dynamic features are introduced.
+- **Scalability Considerations:** Plan for infrastructure that supports both rapid prototyping (in the marketing phase) and robust enterprise features (in subsequent phases).
 
-## 4. Non-Functional Requirements
-
-### Performance
-- Response times
-- Throughput expectations
-- Scalability requirements
-
-### Security
-- Authentication
-- Authorization
-- Data protection
-- Additional security measures
-
-### Usability
-- Design considerations for enhanced UX
-
-### Reliability & Availability
-- Expected uptime
-- Error handling
-- Recovery processes
-
-## 5. System Architecture and Design
-
-### High-Level Architecture
-- Component interaction diagrams
-- Flowcharts
-- Sequence diagrams
-- Mermaid diagrams
-
-### Data Flow Diagrams
-- System data flow illustrations
-
-### Integration Points
-- External systems
-- APIs
-- Required services
-
-## 6. Constraints and Assumptions
-
-### Technical Constraints
-- Technology limitations
-- Third-party service limitations
-- Platform constraints
-
-### Assumptions
-- User behavior assumptions
-- System environment assumptions
-- Other project assumptions
-
-## 7. Testing and Validation
-
-### Test Cases
-- Initial test scenarios
-- Functionality validation approaches
-
-### Validation Criteria
-- System requirements verification methods
-
-## 8. Change Log / Revision History System
-- Detail where project documentation is stored
-- Detailed changelog system and where this is stored
-
-## 9. References and Appendices
-
-### Additional Resources
-- Related document links
-- External references
-- Detailed design documents
-
-### Glossary
-- Term definitions
-- Acronym explanations
+### Library Organization
+- The `src/lib/` directory currently contains various utilities and services:
+  - API-related logic (trpc, api/)
+  - Authentication (auth/)
+  - Email functionality (email/)
+  - General utilities (utils.ts)
+  - AI client integration (aiClient.ts)
+  - Storage services (storage.ts)
+- Future consideration: Further modularization of the lib directory may be implemented during the full app phase to enhance organization and maintainability.

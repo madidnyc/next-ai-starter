@@ -1,0 +1,64 @@
+{
+  "experts": [
+    {
+      "id": "t1",
+      "name": "Dr. Sarah Chen",
+      "title": "AI Research Scientist",
+      "expertise": ["Machine Learning", "Deep Learning", "Neural Networks"],
+      "experience": "10+ years",
+      "education": "Ph.D. in Computer Science, Stanford University",
+      "rating": 4.9,
+      "projectsCompleted": 23,
+      "availability": "Available",
+      "hourlyRate": "$150-200"
+    },
+    {
+      "id": "t2",
+      "name": "Prof. Michael Thompson",
+      "title": "Mathematical Reasoning Expert",
+      "expertise": ["Advanced Mathematics", "Quantitative Analysis", "Mathematical Proofs"],
+      "experience": "15+ years",
+      "education": "Ph.D. in Mathematics, MIT",
+      "rating": 4.8,
+      "projectsCompleted": 31,
+      "availability": "Available next week",
+      "hourlyRate": "$120-180"
+    },
+    {
+      "id": "t3",
+      "name": "Dr. Emily Rodriguez",
+      "title": "Medical AI Consultant",
+      "expertise": ["Medical Data Analysis", "Healthcare AI", "Clinical Validation"],
+      "experience": "8+ years",
+      "education": "M.D. from Johns Hopkins University",
+      "rating": 4.9,
+      "projectsCompleted": 17,
+      "availability": "Part-time available",
+      "hourlyRate": "$200-250"
+    },
+    {
+      "id": "t4",
+      "name": "James Wilson, J.D.",
+      "title": "Legal AI Specialist",
+      "expertise": ["Legal Document Analysis", "Regulatory Compliance", "Contract Review"],
+      "experience": "12+ years",
+      "education": "J.D. from Harvard Law School",
+      "rating": 4.7,
+      "projectsCompleted": 28,
+      "availability": "Available",
+      "hourlyRate": "$175-225"
+    },
+    {
+      "id": "t5",
+      "name": "Dr. Alex Kumar",
+      "title": "Competitive Programming Expert",
+      "expertise": ["Algorithm Design", "Code Optimization", "Problem Solving"],
+      "experience": "7+ years",
+      "education": "Ph.D. in Computer Science, UC Berkeley",
+      "rating": 4.8,
+      "projectsCompleted": 42,
+      "availability": "Available",
+      "hourlyRate": "$140-190"
+    }
+  ]
+}

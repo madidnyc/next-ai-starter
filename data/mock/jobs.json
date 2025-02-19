@@ -1,0 +1,89 @@
+{
+  "jobs": [
+    {
+      "id": "j1",
+      "title": "AI Model Training - Competitive Programming",
+      "company": "TechAI Labs",
+      "description": "Looking for expert programmers to create and solve competitive programming problems to train our large language model for coding challenges.",
+      "requirements": [
+        "Ph.D. in Computer Science or related field",
+        "Experience in competitive programming",
+        "Strong algorithm design skills",
+        "Excellent problem-solving abilities"
+      ],
+      "type": "Contract",
+      "duration": "3-6 months",
+      "rateRange": "$150-200/hour",
+      "location": "Remote",
+      "status": "Active"
+    },
+    {
+      "id": "j2",
+      "title": "Mathematical Reasoning Model Validation",
+      "company": "QuantumMind AI",
+      "description": "Seeking mathematics experts to evaluate AI-generated solutions to complex mathematical problems, ranging from undergraduate to Olympiad levels.",
+      "requirements": [
+        "Ph.D. in Mathematics",
+        "Experience in mathematical proof verification",
+        "Strong analytical skills",
+        "Teaching or mentoring experience preferred"
+      ],
+      "type": "Contract",
+      "duration": "Ongoing",
+      "rateRange": "$120-180/hour",
+      "location": "Remote",
+      "status": "Active"
+    },
+    {
+      "id": "j3",
+      "title": "Medical AI Advisory Project",
+      "company": "HealthTech AI",
+      "description": "Need medical professionals to assess and validate AI-generated medical advice and ensure accuracy in healthcare applications.",
+      "requirements": [
+        "M.D. or equivalent medical degree",
+        "Active medical license",
+        "Experience in clinical practice",
+        "Interest in healthcare AI applications"
+      ],
+      "type": "Part-time Contract",
+      "duration": "6-12 months",
+      "rateRange": "$200-250/hour",
+      "location": "Remote",
+      "status": "Active"
+    },
+    {
+      "id": "j4",
+      "title": "Legal AI Model Training",
+      "company": "LegalTech Solutions",
+      "description": "Seeking legal professionals to review and annotate AI outputs related to legal queries and document analysis.",
+      "requirements": [
+        "J.D. from accredited law school",
+        "5+ years legal practice experience",
+        "Strong analytical skills",
+        "Experience in contract law preferred"
+      ],
+      "type": "Contract",
+      "duration": "3-6 months",
+      "rateRange": "$175-225/hour",
+      "location": "Remote",
+      "status": "Active"
+    },
+    {
+      "id": "j5",
+      "title": "Machine Learning Research Project",
+      "company": "DeepMind Research",
+      "description": "Looking for ML researchers to collaborate on benchmarking and improving AI model performance through experimental evaluations.",
+      "requirements": [
+        "Ph.D. in Computer Science/ML",
+        "Published research in ML/AI",
+        "Experience with model evaluation",
+        "Strong programming skills"
+      ],
+      "type": "Contract",
+      "duration": "6+ months",
+      "rateRange": "$140-190/hour",
+      "location": "Remote",
+      "status": "Active"
+    }
+  ]
+}
