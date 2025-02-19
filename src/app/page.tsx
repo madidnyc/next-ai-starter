@@ -1,5 +1,4 @@
 import React from "react";
-import ClientProvider from "@/components/ClientProvider";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import Link from "next/link";
@@ -26,19 +25,17 @@ export default async function Page() {
       {/* {session && <NavigationBar />} */}
 
       <main className="flex-1 flex flex-col w-full mx-auto">
-        <ClientProvider>
-          <div className="flex-1 flex flex-col items-start justify-center">
-            {session ? (
-              // Authenticated View
-              <section className="max-w-7xl w-full space-y-8 animate-fade-in">
-                <h1> Welcome {session.user?.name}</h1>
-              </section>
-            ) : (
-              // Marketing View
-              <HomepageWrapper />
-            )}
-          </div>
-        </ClientProvider>
+        <div className="flex-1 flex flex-col items-start justify-center">
+          {session ? (
+            // Authenticated View
+            <section className="max-w-7xl w-full space-y-8 animate-fade-in">
+              <h1> Welcome {session.user?.name}</h1>
+            </section>
+          ) : (
+            // Marketing View
+            <HomepageWrapper />
+          )}
+        </div>
       </main>
 
       {/* Footer */}
