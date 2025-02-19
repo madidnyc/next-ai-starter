@@ -87,4 +87,32 @@ Needed to establish a reliable approach for testing components styled with Tailw
      - Include style assertions within component test files
      - Test both functionality and styling in the same describe block
 
+### 2025-02-19 - Client/Server Component Architecture
+
+**Context:**
+Encountered hydration errors when rendering client components directly in server components, specifically with the HeroSection in page.tsx.
+
+**Decisions:**
+1. **Client Component Boundary Management**
+   - Decision: Implement wrapper components for client-side rendering boundaries
+   - Rationale: 
+     - Prevents hydration mismatches between server and client rendering
+     - Creates clear boundaries for client-side functionality
+     - Improves debugging and maintenance
+   - Implementation:
+     - Created HomepageWrapper.tsx as client boundary
+     - Moved HeroSection rendering inside wrapper
+     - Updated page.tsx to use wrapper instead of direct component
+
+2. **Component Hierarchy Strategy**
+   - Decision: Keep page.tsx as server component and push client components down the tree
+   - Rationale:
+     - Maintains Next.js server-first approach
+     - Allows for better performance through selective hydration
+     - Clearer separation between server and client logic
+   - Implementation:
+     - Server components handle data fetching and layout
+     - Client components handle interactivity and client-side state
+     - Wrapper components manage the boundary between server and client
+
 Use this document to record key decisions along with context, rationale, and implementation notes.
