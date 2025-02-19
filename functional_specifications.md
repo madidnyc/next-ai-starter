@@ -13,7 +13,7 @@ project-root/
 ├── src/
 │   ├── app/
 │   │   ├── marketing/     # Marketing-specific pages
-│   │   ├── dashboard/     # Reserved for future app pages
+│   │   ├── app/          # All app-related pages and features
 │   │   └── api/          # API routes for simulated backend
 │   ├── components/       # Shared UI components
 │   ├── lib/             # Utilities and shared types
@@ -52,7 +52,9 @@ project-root/
 
 ### Architectural Decisions
 - **Unified Application:** Using a single Next.js application simplifies development, deployment, and eventual integration of full app features.
-- **Routing Strategy:** Beginning with top-level routes offers simplicity. In future phases, consider nesting app-specific routes under a dedicated folder (e.g., "/app") to clearly separate marketing and application functionalities.
+- **Routing Strategy:** 
+  - Marketing pages implemented as top-level routes for clean URLs
+  - Future app features will be housed under the "src/app/app/" directory (e.g., "src/app/app/dashboard" for dashboard features)
 - **Separation of Concerns:** Internally segment the project for marketing and app features to promote maintainability and scalability.
 - **Data Simulation:** Using API routes with static JSON files for dummy data provides a realistic development experience and simplifies migration to dynamic data sources.
 
