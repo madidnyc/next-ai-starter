@@ -16,6 +16,9 @@ project-root/
 │   │   ├── app/          # All app-related pages and features
 │   │   └── api/          # API routes for simulated backend
 │   ├── components/       # Shared UI components
+│   │   ├── marketing/    # Marketing site components
+│   │   │   └── homepage/ # Homepage-specific components
+│   │   └── app/         # App-specific components
 │   ├── lib/             # Utilities and shared types
 │   └── styles/          # Additional styling
 ├── data/
@@ -25,6 +28,8 @@ project-root/
 │   └── images/         # Image files
 ├── tests/
 │   ├── unit/          # Jest unit tests
+│   │   ├── marketing/ # Marketing components tests
+│   │   └── app/      # App components tests
 │   ├── integration/   # Jest integration tests
 │   └── e2e/           # Playwright end-to-end tests
 └── docs/              # Project documentation
@@ -72,3 +77,12 @@ project-root/
   - AI client integration (aiClient.ts)
   - Storage services (storage.ts)
 - Future consideration: Further modularization of the lib directory may be implemented during the full app phase to enhance organization and maintainability.
+
+### Component Organization
+- Components are organized by their purpose and scope:
+  - `src/components/marketing/`: Components specific to the marketing site
+    - `homepage/`: Components used on the homepage
+    - Other marketing-specific component directories as needed
+  - `src/components/app/`: Components specific to the application
+    - Will be organized by feature/domain as the app grows
+  - Shared components that serve both marketing and app purposes may be placed at the root of the components directory
