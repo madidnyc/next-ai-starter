@@ -36,4 +36,31 @@ Needed to establish a directory structure that supports both the immediate marke
    - Rationale: Current structure works well; modularization could break existing imports
    - Implementation: Will revisit during full app phase when more utilities and services are added
 
+### 2025-02-19 - Component Organization
+
+**Context:**
+Needed to establish a clear organization structure for components that supports both marketing site and future app development while maintaining clear separation of concerns.
+
+**Decisions:**
+1. **Component Directory Structure**
+   - Decision: Create separate directories for marketing and app components
+   - Rationale: Clear separation of concerns, easier maintenance, and better scalability
+   - Implementation: 
+     - Created src/components/marketing/ for marketing components
+     - Created src/components/app/ for app components
+     - Further subdivided marketing components by page/section (e.g., homepage/)
+
+2. **Test File Organization**
+   - Decision: Mirror component directory structure in test files
+   - Rationale: Makes it easy to locate tests and maintain relationship between components and their tests
+   - Implementation:
+     - Created tests/unit/marketing/ directory
+     - Organized test files to match component structure
+     - Example: tests/unit/marketing/homepage/HeroSection.test.tsx matches src/components/marketing/homepage/HeroSection.tsx
+
+3. **Documentation Updates**
+   - Decision: Document component organization in functional specifications
+   - Rationale: Ensures consistent implementation and helps onboard new developers
+   - Implementation: Updated functional_specifications.md with detailed component organization structure
+
 Use this document to record key decisions along with context, rationale, and implementation notes.
