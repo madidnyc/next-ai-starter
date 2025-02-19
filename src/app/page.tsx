@@ -4,7 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import HeroSection from "@/components/marketing/homepage/HeroSection";
+import HomepageWrapper from "@/components/marketing/homepage/HomepageWrapper";
 
 export const dynamic = "force-dynamic";
 
@@ -35,9 +35,7 @@ export default async function Page() {
               </section>
             ) : (
               // Marketing View
-              <>
-                <HeroSection />
-              </>
+              <HomepageWrapper />
             )}
           </div>
         </ClientProvider>
