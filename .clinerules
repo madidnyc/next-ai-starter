@@ -1,0 +1,240 @@
+# Project Rules
+
+## 1. Task Breakdown and Execution
+
+### Step-by-Step Breakdown
+- **Deconstruct Instructions:** Break down all user instructions into clear, numbered steps.
+- **Detail Each Step:** Every step must include:
+  - The specific action to be taken.
+  - The reasoning behind the action.
+
+### Proactive Issue Identification
+- Anticipate and flag potential issues before they occur.
+
+### Sequential Verification
+- Verify the completion and correctness of each step before moving on.
+
+### Error Handling
+- If errors are encountered:
+  - Document the error in detail.
+  - Roll back to previous steps as necessary.
+  - Retry steps after addressing the issue.
+
+---
+
+## 2. Test-Driven Development (TDD)
+
+### Pre-Implementation Phase
+1. Review `functional_specifications.md`.
+2. Analyze the existing codebase.
+3. Design test cases prior to implementation.
+
+### Test Development Guidelines
+
+#### Feature Testing Approach
+1. Write test cases first.
+2. Implement unit tests.
+3. Add integration tests.
+4. Cover edge cases.
+5. Test error scenarios.
+
+#### Test Structure
+1. Mirror the production code organization.
+2. Follow the AAA (Arrange, Act, Assert) pattern.
+3. Ensure test independence.
+4. Use descriptive test names.
+
+#### Coverage Requirements
+1. Comprehensive business logic testing.
+2. Verification of both success and failure paths.
+3. Boundary condition testing.
+4. Mock external dependencies where necessary.
+
+---
+
+## 3. Credential Management
+
+- **Clear Communication:** When requesting credentials, explain the purpose and necessity.
+- **User Guidance:** Assist users in obtaining any missing credentials.
+- **Validation:** Always test the validity of credentials before use.
+- **Security Practices:**
+  - **Never** store credentials in plaintext in code or files.
+  - Use environment variables or secure storage methods.
+- **Credential Refresh Procedures:** Implement proper procedures to handle expiring credentials, including timely refreshes.
+- **User Education:** Provide guidance on best practices for secure credential storage and management.
+
+---
+
+## 4. Code Structure and Organization
+
+### Modularity
+- Keep files small and modular.
+- **No file must exceed 400 lines of code.** Refactor large files by breaking down classes or functions into smaller modules.
+
+### Modularization Principles
+1. **Group by Domain/Feature:** Separate core business logic from infrastructure code and keep related functionality together.
+2. **Single Responsibility:** Each module should handle one specific concern with a clear purpose.
+3. **Low Coupling:** Minimize dependencies between modules; use interfaces or contracts for communication.
+4. **High Cohesion:** Keep strongly related code together; avoid mixing different levels of abstraction.
+5. **Clear Boundaries:** Define explicit module interfaces and document responsibilities and dependencies.
+
+### Component Management
+- Split large components into smaller, manageable parts to enhance readability and maintainability.
+
+### Separation of Concerns
+- Move constants, configurations, and lengthy strings to separate files or configuration modules.
+
+### Naming Conventions
+- Use descriptive and meaningful names for files, functions, and variables to improve clarity.
+
+### Documentation
+- Document all file dependencies.
+- Maintain a clean and organized project structure with clear directories and file hierarchies.
+
+---
+
+## 5. Error Handling and Reporting
+
+- **Detailed Reporting:** Implement comprehensive error reporting mechanisms with actionable information.
+- **Logging:** Log errors with relevant context and timestamps for debugging and historical analysis.
+- **User Communication:** Provide clear, step-by-step instructions for error recovery.
+- **Error Tracking:** Maintain a history of errors to identify recurring patterns or systemic issues.
+- **Escalation Procedures:** Establish protocols to escalate unresolved issues to higher support levels or developers.
+- **Robust Mechanisms:** Ensure strong error handling and recovery processes are in place across all components.
+
+---
+
+## 6. Documentation
+
+- **Code Documentation:** Write clear and concise comments for all public functions, methods, and complex code segments.
+- **README Files:** Include a `README.md` in each package or service directory explaining the purpose, usage, and any special considerations.
+- **Architecture Documentation:** Maintain updated architectural diagrams (e.g., Mermaid diagrams) and descriptions in the main `README.md` and other key markdown files.
+- **Configuration Documentation:** Document all configuration options, their defaults, and examples in both the code and example configuration files.
+- **Functional Specifications:** When changes affect project structure or functionality, update `functional_specifications.md` to reflect:
+  - New features or requirements.
+  - Modified business rules.
+  - Changed specifications.
+  - Deprecated functionality.
+
+---
+
+## 7. Change Management
+
+### When Suggesting Changes
+1. Start with test cases that validate the requirements.
+2. Explain the rationale behind architectural decisions.
+3. Highlight potential impacts on existing code and tests.
+4. Consider maintainability and future extensibility.
+5. Provide migration steps if significant refactoring is needed.
+6. Include test updates or additions as necessary.
+
+### After Implementing Changes
+1. Review and update affected documentation.
+2. Confirm documentation accuracy.
+3. Verify that all tests pass.
+4. Notify the team of any documentation updates.
+5. Suggest additional test coverage if needed.
+
+---
+
+## 8. Project-Specific Guidelines
+
+### 8.1 Components & Naming
+- **Components:** Use functional components and include `"use client"` when required.
+- **Naming:** Name components in PascalCase and place them under `src/components/`.
+- **Size & Typing:** Keep components small and typed with interfaces.
+- **UI Frameworks:** Use Tailwind CSS and ShadCN for common UI elements like textareas and buttons.
+
+### 8.2 Prisma
+- **DB Management:** Manage database logic with Prisma using `prisma/schema.prisma` and `src/lib/db.ts`.
+- **Naming Conventions:** Use snake_case for table names and camelCase for fields.
+- **Migrations:** Avoid raw SQL; run `npx prisma migrate dev` and never use `npx prisma db push`.
+
+### 8.3 Icons
+- **Icon Library:** Prefer using `lucide-react` for icons and name them in PascalCase.
+- **Custom Icons:** Place custom icons in `src/components/icons`.
+
+### 8.4 Toast Notifications
+- **Library:** Use `react-toastify` in client components.
+- **Usage:** Utilize functions like `toast.success()` and `toast.error()` for notifications.
+
+### 8.5 Next.js Structure
+- **App Router:** Use the App Router in the `app/` directory.
+- **Component Types:** Default to server components; add `"use client"` for client-specific logic.
+- **Authentication:** Implement NextAuth with Prisma for authentication and manage secrets via `.env`.
+
+### 8.6 tRPC Routers
+- **Routing:** Place routers in `src/lib/api/routers` and compose them in `src/lib/api/root.ts`.
+- **Procedures:** Use `publicProcedure` or `protectedProcedure` with Zod for validation.
+- **Access:** Access tRPC from React via `@/lib/trpc/react`.
+
+### 8.7 TypeScript & Syntax
+- **Strict Mode:** Enable strict mode and avoid using `any`.
+- **Syntax:** Utilize optional chaining and union types; refrain from using enums.
+
+### 8.8 File & Folder Names
+- **Routes:** Use kebab-case for Next.js routes (e.g., `app/dashboard/page.tsx`).
+- **Shared Types:** Place shared types in `src/lib/types.ts`.
+- **Import Sorting:** Sort imports in the following order: external → internal → sibling → styles.
+
+### 8.9 Tailwind Usage
+- **CSS Framework:** Use Tailwind CSS with a mobile-first approach and dark mode using `dark:(class)`.
+- **Customization:** Extend brand tokens in `tailwind.config.ts`.
+- **Animations:** Prefer using Framer Motion for animations.
+
+### 8.10 Inngest / Background Jobs
+- **Configuration:** Use `inngest.config.ts` for Inngest configuration.
+- **API Routes:** Place Inngest API routes in `src/app/api/inngest/route.ts`.
+- **UI Updates:** Use polling to update the UI when Inngest events are received (do not rely solely on tRPC responses).
+
+### 8.11 AI Integration
+- **AI Calls:** Use `generateChatCompletion` in `src/lib/aiClient.ts` for all AI interactions.
+- **Model Preference:** Prefer the `o3-mini` model with high reasoning effort for AI calls.
+
+### 8.12 Storybook
+- **Story Files:** Place stories in `src/stories` with a `.stories.tsx` extension.
+- **Component Matching:** Create one story file per component, matching the component’s name.
+- **Documentation:** Use autodocs for automatic documentation.
+- **Variants:** Include multiple variants and sizes in stories.
+- **Interactivity:** Test interactive features using actions.
+- **Imports:** Use relative imports from the component directory.
+
+### 8.13 Additional Guidelines
+- **Conciseness:** Keep code short and commits semantic.
+- **Reusable Logic:** Place shared logic in `src/lib/utils/shared.ts` or `src/lib/utils/server.ts`.
+- **Migrations:** Use `tsx` scripts for migrations.
+
+### 8.14 IMPORTANT
+- **Build:** After all changes, ALWAYS build the project with `npm run build`. Ignore warnings, but fix all errors.
+- **Update Log:** Always add a one-sentence summary of changes to the `.cursor-updates` file in Markdown format at the end of every agent interaction.
+- **Finish Command:** If you forget, the user can type the command "finish" to trigger a build and update `.cursor-updates`.
+- **Git:** Finally, update git with `git add . && git commit -m "..."`. **Do not push automatically.**
+
+---
+
+## 9. Git Usage
+
+### Commit Message Prefixes
+- `fix:` for bug fixes
+- `feat:` for new features
+- `perf:` for performance improvements
+- `docs:` for documentation changes
+- `style:` for formatting changes
+- `refactor:` for code refactoring
+- `test:` for adding missing tests
+- `chore:` for maintenance tasks
+
+### Rules
+- Use lowercase for commit messages.
+- Keep the summary line concise.
+- Include a description for non-obvious changes.
+- Reference issue numbers when applicable.
+- Commit frequently using your judgment to capture incremental progress. err on the side of committing more often.
+
+---
+
+## 10. Conclusion
+
+- You must strictly adhere to the rules and guidelines outlined above. 
+- Your responses must ALWAYS demonstrate compliance with these guidelines, and you should actively reference them when providing assistance or generating code. 
+- Failure to follow these rules is not an option.
