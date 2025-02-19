@@ -63,4 +63,28 @@ Needed to establish a clear organization structure for components that supports 
    - Rationale: Ensures consistent implementation and helps onboard new developers
    - Implementation: Updated functional_specifications.md with detailed component organization structure
 
+### 2025-02-19 - Testing Strategy for Styled Components
+
+**Context:**
+Needed to establish a reliable approach for testing components styled with Tailwind CSS.
+
+**Decisions:**
+1. **Style Testing Approach**
+   - Decision: Test for Tailwind class names instead of computed styles
+   - Rationale: 
+     - More reliable than testing computed styles which can vary across browsers
+     - Directly tests what we control (class names) rather than browser computations
+     - Easier to maintain as tests won't break with minor style adjustments
+   - Implementation:
+     - Updated test files to use toHaveClass() instead of toHaveStyle()
+     - Test for specific Tailwind classes that define styling
+     - Example: test for 'text-[48px]' class instead of { fontSize: '48px' }
+
+2. **Test Organization**
+   - Decision: Group style-related tests with other component tests
+   - Rationale: Keeps all component-related tests together for better maintainability
+   - Implementation:
+     - Include style assertions within component test files
+     - Test both functionality and styling in the same describe block
+
 Use this document to record key decisions along with context, rationale, and implementation notes.
