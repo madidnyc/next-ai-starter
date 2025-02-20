@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 /* Custom Global Styles */
-/* Other global styles can be added here */
+@layer base {
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
 
 /* Ticker Animation Styles */
 @keyframes ticker {
@@ -16,6 +20,19 @@
 }
 
 .animate-ticker {
-  animation: ticker 60s linear infinite; /* Slowed down from 30s to 60s */
+  animation: ticker 60s linear infinite;
   width: 300%;
+}
+
+/* Card Hover Effects */
+.group:hover .group-hover\:scale-\[1\.02\] {
+  transform: scale(1.02);
+}
+
+.group:hover .group-hover\:shadow-\[0_4px_16px_rgba\(0\,0\,0\,0\.2\)\] {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.group:hover .group-hover\:text-\[\#02A57E\] {
+  color: #02A57E;
 }

@@ -8,8 +8,8 @@ import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import { ThemeAwareToast } from "@/components/theme/ThemeAwareToast";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: "Zaigo - AI-Powered Academic Talent Platform",
+  description: "AI-powered vetting connects you with elite academic talent in hours—not weeks.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -22,6 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <ThemeProvider defaultTheme="system" enableSystem>
           <ClientProvider>
