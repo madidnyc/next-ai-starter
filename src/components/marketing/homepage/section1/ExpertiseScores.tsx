@@ -30,7 +30,7 @@ const ExpertiseScores = memo(function ExpertiseScores() {
   return (
     <div className="space-y-4 bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-gray-100">
       <h4 className="text-sm font-semibold text-[#343A40]">AI-Validated Expertise</h4>
-      <div className="space-y-3">
+      <div className="space-y-2">
         {expertiseScores.map((score) => (
           <div key={score.skill} className="space-y-1">
             <div className="flex justify-between text-sm">
