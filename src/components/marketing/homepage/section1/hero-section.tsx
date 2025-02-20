@@ -11,8 +11,8 @@ export function HeroSection() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
 
   return (
-    <section className="w-full bg-white py-12">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center">
+    <section className="w-full bg-white">
+      <div className="py-12 container mx-auto flex flex-col lg:flex-row items-center">
         {/* Left Side: Text Content */}
         <div className="flex-1 p-4">
           <h1 className="text-5xl font-bold text-[#343A40] mb-4">

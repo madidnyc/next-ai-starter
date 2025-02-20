@@ -22,8 +22,8 @@ const painPoints = [
 
 export default function PainPointsSection() {
   return (
-    <section className="w-full bg-[#F8F9FA] py-20 lg:py-40">
-      <div className="container mx-auto">
+    <section className="w-full bg-[#F8F9FA]">
+      <div className="container mx-auto py-20 lg:py-40">
         <div className="flex flex-col gap-10">
           <div className="flex gap-4 flex-col items-start">
             <div>
