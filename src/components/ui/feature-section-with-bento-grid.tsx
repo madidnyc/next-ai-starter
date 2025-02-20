@@ -1,5 +1,5 @@
-import { User } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { User } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
 
 function Feature() {
   return (
@@ -64,7 +64,7 @@ function Feature() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export { Feature };
+export { Feature }
