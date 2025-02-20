@@ -7,7 +7,7 @@ interface ExpertiseScore {
   skill: string
   score: number
   color: string
-  tailwindColor: string // Add this for Tailwind classes
+  tailwindColor: string
 }
 
 const expertiseScores: ExpertiseScore[] = [
@@ -34,7 +34,7 @@ const expertiseScores: ExpertiseScore[] = [
 const ExpertiseScores = memo(function ExpertiseScores() {
   return (
     <div className="space-y-4 bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-gray-100">
-      <h4 className="text-sm font-semibold text-[#343A40]">AI-Validated Expertise</h4>
+      <h4 className="text-sm tracking-tight text-[#343A40]">AI-Validated Expertise</h4>
       <div className="space-y-2">
         {expertiseScores.map((score) => (
           <Progress
@@ -46,8 +46,8 @@ const ExpertiseScores = memo(function ExpertiseScores() {
           >
             {() => (
               <div className="flex justify-between text-sm mb-1">
-                <span className="text-[#343A40]">{score.skill}</span>
-                <span className="font-medium" style={{ color: score.color }}>{score.score}%</span>
+                <span className="text-[#343A40] tracking-tight">{score.skill}</span>
+                <span className="tracking-tight" style={{ color: score.color }}>{score.score}%</span>
               </div>
             )}
           </Progress>

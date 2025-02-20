@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { motion, useInView } from "framer-motion"
 
 interface StatisticCounterProps {
@@ -10,7 +10,6 @@ interface StatisticCounterProps {
 }
 
 export function StatisticCounter({ value, label, suffix = "" }: StatisticCounterProps) {
-  const [count, setCount] = useState(0)
   const ref = useRef(null)
   const isInView = useInView(ref)
 
@@ -24,10 +23,7 @@ export function StatisticCounter({ value, label, suffix = "" }: StatisticCounter
       const timer = setInterval(() => {
         current += stepValue
         if (current >= value) {
-          setCount(value)
           clearInterval(timer)
-        } else {
-          setCount(Math.floor(current))
         }
       }, duration / steps)
 
@@ -43,12 +39,11 @@ export function StatisticCounter({ value, label, suffix = "" }: StatisticCounter
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="text-2xl font-bold text-[#028C6A]">
-        {count.toLocaleString()}
+      <div className="text-2xl tracking-tighter font-regular text-[#028C6A]">
+        {value.toLocaleString()}
         {suffix}
       </div>
-      <div className="text-sm text-gray-500">{label}</div>
+      <div className="text-sm tracking-tight text-[#6C757D]">{label}</div>
     </motion.div>
   )
 }
-

@@ -24,32 +24,34 @@ export default function PainPointsSection() {
   return (
     <section className="w-full bg-[#F8F9FA]">
       <div className="container mx-auto py-20 lg:py-40">
-        <div className="flex flex-col gap-10">
-          <div className="flex gap-4 flex-col items-start">
-            <div>
-              <Badge>Solutions</Badge>
-            </div>
-            <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-bold text-left text-[#343A40]">
+        <div className="space-y-12">
+          <div className="flex flex-col items-start gap-4">
+            <Badge variant="outline" className="border-[#028C6A] text-[#028C6A]">
+              Challenges
+            </Badge>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-[#343A40]">
                 Your AI Lab Challenges, Solved
               </h2>
-              <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-[#6C757D] text-left">
-                AI-powered vetting connects you with elite academic talent in hours—not weeks.
+              <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-[#6C757D]">
+                We understand the unique challenges AI labs face in finding and validating specialized talent.
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {painPoints.map((point, index) => (
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            {painPoints.map((point) => (
               <div
                 key={point.title}
-                className={`bg-white rounded-md p-6 ${
-                  index === 0 ? "lg:col-span-2 aspect-square lg:aspect-auto" : "aspect-square"
-                } flex justify-between flex-col group hover:scale-[1.02] hover:shadow-lg transition-all duration-200`}
+                className="bg-white rounded-md p-6 flex justify-between flex-col group hover:scale-[1.02] hover:shadow-lg transition-all duration-200"
               >
-                <point.icon className="w-8 h-8 stroke-1 text-[#028C6A] group-hover:text-[#02A57E] transition-colors duration-200" />
-                <div className="flex flex-col">
-                  <h3 className="text-xl tracking-tight text-[#343A40] font-semibold">{point.title}</h3>
-                  <p className="text-[#6C757D] max-w-xs text-base">{point.description}</p>
+                <point.icon
+                  className="h-6 w-6 text-[#028C6A] group-hover:text-[#02A57E] transition-colors duration-200"
+                  aria-hidden="true"
+                />
+                <div className="mt-4">
+                  <h3 className="text-xl tracking-tighter text-[#343A40] font-regular">{point.title}</h3>
+                  <p className="mt-2 text-base tracking-tight text-[#6C757D]">{point.description}</p>
                 </div>
               </div>
             ))}

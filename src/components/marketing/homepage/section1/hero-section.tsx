@@ -16,10 +16,10 @@ export function HeroSection() {
       <div className="py-12 container mx-auto flex flex-col lg:flex-row items-center">
         {/* Left Side: Text Content */}
         <div className="flex-1 p-4">
-          <h1 className="text-5xl font-bold text-[#343A40] mb-4">
+          <h1 className="text-5xl tracking-tighter font-regular text-[#343A40] mb-4">
             The AI Lab's Platform for Specialized Talent at Scale
           </h1>
-          <p className="text-lg text-[#343A40] mb-6">
+          <p className="text-lg tracking-tight text-[#343A40] mb-6">
             AI-powered vetting connects you with elite academic talent in hours—not weeks.
           </p>
           <div className="flex space-x-8 mb-6">
@@ -35,11 +35,11 @@ export function HeroSection() {
             <div className="bg-[#F8F9FA] p-6 rounded-lg">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 rounded-full bg-[#028C6A] flex items-center justify-center">
-                  <span className="text-white font-semibold">JD</span>
+                  <span className="text-white">JD</span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-[#343A40]">Dr. Jane Doe</h4>
-                  <p className="text-sm text-[#6C757D]">ML Research Scientist, Stanford</p>
+                  <h4 className="text-lg tracking-tighter text-[#343A40]">Dr. Jane Doe</h4>
+                  <p className="text-sm tracking-tight text-[#6C757D]">ML Research Scientist, Stanford</p>
                 </div>
               </div>
               
