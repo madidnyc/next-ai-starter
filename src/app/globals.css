@@ -16,6 +16,6 @@
 }
 
 .animate-ticker {
-  animation: ticker 30s linear infinite; /* Slowed down from 15s to 30s */
+  animation: ticker 60s linear infinite; /* Slowed down from 30s to 60s */
   width: 300%;
 }
