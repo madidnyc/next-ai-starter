@@ -6,6 +6,7 @@ import { useState } from "react"
 import { CTAButtons } from "./CTAButtons"
 import { TickerBar } from "./ticker-bar"
 import ExpertiseScores from "./ExpertiseScores"
+import { StatisticCounter } from "./statistic-counter"
 
 export function HeroSection() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false)
@@ -22,18 +23,9 @@ export function HeroSection() {
             AI-powered vetting connects you with elite academic talent in hours—not weeks.
           </p>
           <div className="flex space-x-8 mb-6">
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-[#028C6A]">250,000+</h3>
-              <p className="text-sm text-[#343A40]">Vetted Experts</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-[#028C6A]">7,500+</h3>
-              <p className="text-sm text-[#343A40]">Academic Institutions</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-2xl font-semibold text-[#028C6A]">80%</h3>
-              <p className="text-sm text-[#343A40]">Faster Hiring</p>
-            </div>
+            <StatisticCounter value={250000} label="Vetted Experts" suffix="+" />
+            <StatisticCounter value={7500} label="Academic Institutions" suffix="+" />
+            <StatisticCounter value={80} label="Faster Hiring" suffix="%" />
           </div>
           <CTAButtons />
         </div>
